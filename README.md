@@ -21,7 +21,7 @@ Parameters:
  
  Eval metrics: Area under precision recall curve
  
- Tuning time: 45 minutes. 10 samples over 5 cross validation. 
+ Tuning time: 45 minutes. 10 parameter samples over 5 cross validation -> 50 models built. 
  
  Training time: 29 sec, train-aucpr:0.999994	eval-aucpr:0.883845
  
