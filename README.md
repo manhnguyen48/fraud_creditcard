@@ -1,7 +1,12 @@
 # Credit card fraud detection
-Credit card fraud detection from kaggle datasets
-
+Credit card fraud detection from kaggle datasets. 
 The dataset is from kaggle: <a>https://www.kaggle.com/mlg-ulb/creditcardfraud/home</a>
+
+About dataset: 
+<ul>
+ <li>Highly unbalanced target class (0.17% over nearly 300k transactions)</li>
+ <li>Unamed feature space (features are from PCA as described)</li>
+ </ul>
 
 Algorithm used: XGB binary:logistic
 
