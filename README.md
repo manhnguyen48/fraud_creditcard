@@ -7,28 +7,26 @@ About dataset:
  <li>Unamed feature space (features are from PCA as described)</li>
  </ul>
 
-Algorithm used: XGB binary:logistic
+Algorithm used: XGB binary:logistic, tree_method = gpu_hist
 
 Parameters: 
-{'colsample_bytree': 0.1,
- 'gamma': 0.0,
+{'colsample_bytree': 0.5,
  'learning_rate': 0.2,
- 'max_depth': 7,
- 'min_child_weight': 5,
- 'n_estimators': 500,
- 'reg_alpha': 0.1,
- 'subsample': 0.55}
+ 'max_depth': 16,
+ 'min_child_weight': 1,
+ 'n_estimators': 550,
+ 'subsample': 0.75}
  
  Eval metrics: Area under precision recall curve
  
- Tuning time: 45 minutes. 10 parameter samples over 5 cross validation -> 50 models built. 
+ Tuning time: 1h2m 
  
- Training time: 29 sec, train-aucpr:0.999994	eval-aucpr:0.883845
+ Training time: 13.6 sec, train-aucpr:1	eval-aucpr:0.88911
  
  Metrics: 
  <ul>
-  <li>Accuracy: 0.999</li>
-  <li>Precision: 0.888 </li>
-  <li>Recall: 0.8163 </li>
-  <li>F1: 0.85 </li>
+  <li>Accuracy: 0.99963 </li>
+  <li>Precision: 0.96386 </li>
+  <li>Recall: 0.81633 </li>
+  <li>F1: 0.88393 </li>
  </ul>
